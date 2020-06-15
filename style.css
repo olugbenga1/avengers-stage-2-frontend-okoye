@@ -3,7 +3,66 @@
 /* All other resources should be downloaded on your own */
 /* @import url("https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap");
  */
- /* font-family: Ubuntu,
+/* font-family: Ubuntu,
 sans-serif;
 font-family: Lora,
 serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Ubuntu, sans-serif, Lora, serif;
+}
+
+/* nav */
+nav {
+  background-color: #55a8ae;
+  width: 100%;
+}
+
+#nav-bar {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-bar ul li {
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+    padding: 30px;
+}
+
+#nav-bar ul li a {
+    text-decoration: none;
+    color: #fff
+}
+
+#nav-bar .nav-links {
+    display: inline-block;
+}
+
+#nav-bar img {
+    display: block;
+    width: 90px;
+}
+
+
+/* Media Queries */ 
+@media only screen and (max-width: 1000px) {
+    #nav-bar ul li {
+        margin: 0 10px;
+        padding: 0;
+    }
+        #nav-bar ul li {
+            font-size: 14px;
+        }
+}
